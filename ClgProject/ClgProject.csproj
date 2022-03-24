@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Change_Password\ChangePassword.cs" />
+    <Compile Include="Forget_Password\ForgetPassword.cs" />
     <Compile Include="LoginPage\LoginActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -135,7 +136,6 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forget_Password\" />
     <Folder Include="Interns\internInternshipdetails\" />
     <Folder Include="Interns\internsDashboard\" />
     <Folder Include="Interns\internsProfile\" />
@@ -145,6 +145,23 @@
     <Folder Include="mentors\mentorProfile\" />
     <Folder Include="mentors\mentorsDashboard\" />
     <Folder Include="mentors\mentorViewLeaveRequest\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\email_fill.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\forgotpassimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\shape.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Warningpreview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\forget_password.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

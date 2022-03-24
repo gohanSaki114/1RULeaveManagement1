@@ -29,7 +29,6 @@ ImageView;obj\Debug\110\res\layout\forget_password.xml
 ImageView;obj\Debug\110\res\layout\login_page.xml
 item;obj\Debug\110\res\values\styles.xml
 LinearLayout;obj\Debug\110\res\layout\change_password.xml
-LinearLayout;obj\Debug\110\res\layout\forget_password.xml
 LinearLayout;obj\Debug\110\res\layout\login_page.xml
 padding;obj\Debug\110\res\drawable\shape.xml
 path;obj\Debug\110\res\drawable\email_fill.xml

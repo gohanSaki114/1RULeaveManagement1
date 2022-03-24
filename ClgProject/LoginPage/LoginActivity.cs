@@ -25,7 +25,7 @@ namespace ClgProject
         }
         private void Register_Click(object sender, EventArgs e)
         {
-            Intent FP = new Intent(this, typeof());
+            Intent FP = new Intent(this, typeof(Forget_Password));
             StartActivity(FP);
         }
 
