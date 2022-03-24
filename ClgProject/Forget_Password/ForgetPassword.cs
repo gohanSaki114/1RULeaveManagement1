@@ -23,9 +23,10 @@ namespace ClgProject.Forget_Password
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.forget_password); 
             UIReferences();
-            // Create your application here
-        }
+ 
+                }
 
         private void UIReferences()
         {

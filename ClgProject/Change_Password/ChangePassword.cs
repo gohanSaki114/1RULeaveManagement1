@@ -13,7 +13,7 @@ using System.Text;
 
 namespace ClgProject
 {
-    [Activity(Label = "ChangePassword",MainLauncher = true)]
+    [Activity(Label = "ChangePassword")]
     public class ChangePassword : AppCompatActivity
     {
 

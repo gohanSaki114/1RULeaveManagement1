@@ -4,16 +4,18 @@ using Android.OS;
 using Android.Runtime;
 using Android.Widget;
 using AndroidX.AppCompat.App;
+using ClgProject.Forget_Password;
 using Google.Android.Material.TextField;
 using System;
 
 namespace ClgProject
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = false)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class LoginActivity : AppCompatActivity
     {
         private TextInputLayout usernamelyt, passwordlyt;
         private EditText usernametxt, passwordtxt;
+        private TextView forget;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -23,15 +25,17 @@ namespace ClgProject
             UIReferences();
             UIClickEvent(); 
         }
-        private void Register_Click(object sender, EventArgs e)
-        {
-            Intent FP = new Intent(this, typeof(Forget_Password));
-            StartActivity(FP);
-        }
+     
 
         private void UIClickEvent()
         {
-            throw new NotImplementedException();
+            forget.Click += Forget_Click;    
+        }
+
+        private void Forget_Click(object sender, EventArgs e)
+        {
+            Intent FP = new Intent(this, typeof(ForgetPassword));
+            StartActivity(FP);
         }
 
         private void UIReferences()
@@ -40,6 +44,7 @@ namespace ClgProject
             passwordlyt = FindViewById<TextInputLayout>(Resource.Id.PasswordInputLayout);
             usernametxt = FindViewById<EditText>(Resource.Id.usernametxt);
             passwordtxt = FindViewById<EditText>(Resource.Id.Passwordtxt);
+            forget = FindViewById<TextView>(Resource.Id.Forgetpasswordtxt);
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

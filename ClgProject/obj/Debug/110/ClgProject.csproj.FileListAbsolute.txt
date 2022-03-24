@@ -329,3 +329,9 @@ C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\android\
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\android\src\mono\androidx\constraintlayout\widget\SharedValues_SharedValuesListenerImplementor.java
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\android\src\mono\androidx\core\view\OnReceiveContentListenerImplementor.java
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\android\src\mono\androidx\core\view\WindowInsetsControllerCompat_OnControllableInsetsChangedListenerImplementor.java
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\drawable\email_fill.xml
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\drawable\forgotpassimage.png
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\drawable\shape.xml
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\drawable\warningpreview.png
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\layout\forget_password.xml
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\android\src\crc64de9b17b706be5f03\ForgetPassword.java
