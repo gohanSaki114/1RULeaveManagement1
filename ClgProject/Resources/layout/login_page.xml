@@ -90,6 +90,7 @@
                     android:layout_marginTop="@dimen/size30"
                     android:backgroundTint="@color/crayola"
                     android:textColor="@color/darkliver"
+                    android:maxLength="16"
                 />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -105,14 +106,14 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/password"
                     android:id="@+id/Passwordtxt"
-                    android:drawableStart="@drawable/keys"
+                    android:drawableStart="@drawable/key"
                     android:inputType="textPassword" 
                     android:layout_marginTop="@dimen/size30"
                     android:drawablePadding="@dimen/size10"
                     android:textSize="@dimen/size25"
                     android:backgroundTint="@color/crayola"
                     android:textColor="@color/darkliver"
-                
+                    android:maxLength="12"                
                     />
 
             </com.google.android.material.textfield.TextInputLayout>                     
@@ -128,6 +129,7 @@
             <com.google.android.material.button.MaterialButton          
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/size60"
+                android:id="@+id/loginButton"
                 android:text="@string/login"
                 android:backgroundTint="@color/crayola"
                 android:textColor="@android:color/white"

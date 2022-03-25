@@ -32,7 +32,7 @@ LinearLayout;obj\Debug\110\res\layout\change_password.xml
 LinearLayout;obj\Debug\110\res\layout\login_page.xml
 padding;obj\Debug\110\res\drawable\shape.xml
 path;obj\Debug\110\res\drawable\email_fill.xml
-path;obj\Debug\110\res\drawable\keys.xml
+path;obj\Debug\110\res\drawable\key.xml
 path;obj\Debug\110\res\drawable\users.xml
 paths;C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\lp\41\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 RelativeLayout;obj\Debug\110\res\layout\forget_password.xml
@@ -57,6 +57,6 @@ TextView;obj\Debug\110\res\layout\change_password.xml
 TextView;obj\Debug\110\res\layout\forget_password.xml
 TextView;obj\Debug\110\res\layout\login_page.xml
 vector;obj\Debug\110\res\drawable\email_fill.xml
-vector;obj\Debug\110\res\drawable\keys.xml
+vector;obj\Debug\110\res\drawable\key.xml
 vector;obj\Debug\110\res\drawable\users.xml
 View;obj\Debug\110\res\layout\login_page.xml

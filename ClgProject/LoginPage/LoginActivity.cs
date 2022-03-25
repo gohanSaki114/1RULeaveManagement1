@@ -7,6 +7,7 @@ using AndroidX.AppCompat.App;
 using ClgProject.Forget_Password;
 using Google.Android.Material.TextField;
 using System;
+using System.Text.RegularExpressions;
 
 namespace ClgProject
 {
@@ -16,11 +17,12 @@ namespace ClgProject
         private TextInputLayout usernamelyt, passwordlyt;
         private EditText usernametxt, passwordtxt;
         private TextView forget;
+        private Button LoginButton;
+        private Regex validUsername = new Regex("^[A-Z]+[a-zA-Z]+(@)+[0-9]*$");
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.login_page);
             UIReferences();
             UIClickEvent(); 
@@ -29,7 +31,77 @@ namespace ClgProject
 
         private void UIClickEvent()
         {
-            forget.Click += Forget_Click;    
+            forget.Click += Forget_Click;
+            LoginButton.Click += LoginButton_Click;
+        }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            if (!checkusername() && !checkpassword())
+            {
+
+                Toast.MakeText(this, "Please Fill the Required Information", ToastLength.Long).Show();
+
+                
+            }
+
+            else
+            if (checkusername() && checkpassword())
+            {
+
+                Toast.MakeText(this, "LoggedIn Successfully", ToastLength.Short).Show();
+                passwordlyt.Error = null;
+                usernamelyt.Error = null;
+
+            }
+            
+        }
+
+        private bool checkpassword()
+        {
+
+            if (passwordtxt.Text.Length == 0)
+            {
+                passwordlyt.Error = "Enter Password";
+                return false;
+            }
+
+            else if (passwordtxt.Text.Length < 8)
+            {
+                passwordlyt.Error = "Enter Valid Password";
+                return false;
+            }
+
+
+            return true;
+        }
+
+        private bool checkusername()
+        {
+            if (usernametxt.Text.Length == 0)
+            {
+
+                usernamelyt.Error = "Enter Username";
+                return false;
+
+            }
+            else if (!isValidateUsername(usernametxt.Text))
+
+            {
+                usernamelyt.Error = "Enter Valid Username";
+                return false;
+            }
+           
+            return true;
+        }
+
+        private bool isValidateUsername(string text)
+        {
+            if (string.IsNullOrEmpty(text))
+
+                return false;
+
+            return validUsername.IsMatch(text);
         }
 
         private void Forget_Click(object sender, EventArgs e)
@@ -45,6 +117,7 @@ namespace ClgProject
             usernametxt = FindViewById<EditText>(Resource.Id.usernametxt);
             passwordtxt = FindViewById<EditText>(Resource.Id.Passwordtxt);
             forget = FindViewById<TextView>(Resource.Id.Forgetpasswordtxt);
+            LoginButton = FindViewById<Button>(Resource.Id.loginButton);
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
