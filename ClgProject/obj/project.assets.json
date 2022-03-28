@@ -2,6 +2,39 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v11.0": {
+      "de.hdodenhof.circleimageview/3.1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.1.0.9"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/de.hdodenhof.circleimageview.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/de.hdodenhof.circleimageview.dll": {}
+        }
+      },
+      "MPAndroidChart/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid/MPAndroidChart.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/MPAndroidChart.dll": {}
+        }
+      },
+      "Refractored.GifImageView/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/monoandroid/Refractored.GifImageView.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid/Refractored.GifImageView.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -977,6 +1010,43 @@
     }
   },
   "libraries": {
+    "de.hdodenhof.circleimageview/3.1.0.1": {
+      "sha512": "ouvHmOFESpN0JYb9TxfvPTNQ3G34b7++GekZXgV6g2iIxkneFaExSoYzCVmVtiAZ6NJTPRORWS3vgvHaJQj1RQ==",
+      "type": "package",
+      "path": "de.hdodenhof.circleimageview/3.1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "de.hdodenhof.circleimageview.3.1.0.1.nupkg.sha512",
+        "de.hdodenhof.circleimageview.nuspec",
+        "lib/monoandroid10.0/de.hdodenhof.circleimageview.dll",
+        "lib/monoandroid10.0/de.hdodenhof.circleimageview.xml"
+      ]
+    },
+    "MPAndroidChart/3.1.0": {
+      "sha512": "AF7H66ipUiFHbvfdUJLXKIrfcNJrrN7egGLeYgFhn459DqoRaIubFIp0jqsY0NxBupp1kaDo3lvW7oi8RAcZgA==",
+      "type": "package",
+      "path": "mpandroidchart/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/MPAndroidChart.dll",
+        "mpandroidchart.3.1.0.nupkg.sha512",
+        "mpandroidchart.nuspec"
+      ]
+    },
+    "Refractored.GifImageView/2.0.0": {
+      "sha512": "c67NJ1I9i0tNdSgd+4pofTCEoDJ85EVRq4pFmXT8BZ75n3/tLYT0RrEQKDQ6Rfw2E5tBMcz0RxXoBH1gdx/htw==",
+      "type": "package",
+      "path": "refractored.gifimageview/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid/Refractored.GifImageView.dll",
+        "refractored.gifimageview.2.0.0.nupkg.sha512",
+        "refractored.gifimageview.nuspec"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -1936,10 +2006,13 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v11.0": [
+      "MPAndroidChart >= 3.1.0",
+      "Refractored.GifImageView >= 2.0.0",
       "Xamarin.AndroidX.AppCompat >= 1.2.0.5",
       "Xamarin.AndroidX.ConstraintLayout >= 2.1.1.1",
       "Xamarin.Essentials >= 1.6.1",
-      "Xamarin.Google.Android.Material >= 1.0.0.1"
+      "Xamarin.Google.Android.Material >= 1.0.0.1",
+      "de.hdodenhof.circleimageview >= 3.1.0.1"
     ]
   },
   "packageFolders": {
@@ -1980,6 +2053,14 @@
     "frameworks": {
       "monoandroid11.0": {
         "dependencies": {
+          "MPAndroidChart": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
+          "Refractored.GifImageView": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "Xamarin.AndroidX.AppCompat": {
             "target": "Package",
             "version": "[1.2.0.5, )"
@@ -1995,6 +2076,10 @@
           "Xamarin.Google.Android.Material": {
             "target": "Package",
             "version": "[1.0.0.1, )"
+          },
+          "de.hdodenhof.circleimageview": {
+            "target": "Package",
+            "version": "[3.1.0.1, )"
           }
         }
       }

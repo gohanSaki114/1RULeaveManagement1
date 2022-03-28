@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="60dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:background="@color/bacgroundWhite">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewLeaveRequest"
+            android:layout_width="170dp"
+            android:layout_height="130dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardViewWfhRequest"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewLeaveRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bluebackground"
+                android:layout_marginTop="14dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/textViewLeaveRequest"/>
+
+            <TextView
+                android:id="@+id/textViewTotalLeaveRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/lightBlue"
+                android:text="20"
+                app:layout_constraintTop_toTopOf="@+id/progressBarLeaveRequest"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewLeaveRequest"
+                app:layout_constraintStart_toStartOf="@+id/progressBarLeaveRequest"
+                app:layout_constraintEnd_toEndOf="@+id/progressBarLeaveRequest"
+                android:layout_marginBottom="5dp"
+                    />
+
+            <ProgressBar
+                android:id="@+id/progressBarLeaveRequest"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="20"
+                android:max="100"
+                android:progressDrawable="@drawable/progressbarblue"
+                app:layout_constraintTop_toTopOf="@+id/imageViewLeaveRequest"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewLeaveRequest"
+                app:layout_constraintStart_toStartOf="@+id/imageViewLeaveRequest"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewLeaveRequest"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/leaveRequests"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/blackColor"
+                android:id="@+id/textViewLeaveRequest"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageViewLeaveRequest"/>
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewWfhRequest"
+            android:layout_width="170dp"
+            android:layout_height="130dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardViewLeaveRequest"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewWfhRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_redbackground"
+                android:layout_marginTop="14dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/textViewWfhRequest"/>
+
+            <TextView
+                android:id="@+id/textViewTotalWfhRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/lightRed"
+                android:text="10"
+                app:layout_constraintTop_toTopOf="@+id/progressBarWfhRequest"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewWfhRequest"
+                app:layout_constraintStart_toStartOf="@+id/progressBarWfhRequest"
+                app:layout_constraintEnd_toEndOf="@+id/progressBarWfhRequest"
+                android:layout_marginBottom="5dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarWfhRequest"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:progress="10"
+                android:max="100"
+                android:progressDrawable="@drawable/progressbarred"
+                app:layout_constraintTop_toTopOf="@+id/imageViewWfhRequest"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewWfhRequest"
+                app:layout_constraintStart_toStartOf="@+id/imageViewWfhRequest"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewWfhRequest"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/wfhRequests"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/blackColor"
+                android:id="@+id/textViewWfhRequest"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageViewWfhRequest"/>
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewLeaveStatus"
+            android:layout_width="364dp"
+            android:layout_height="215dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardViewLeaveRequest">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/leaveStatus"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/blackColor"
+                android:id="@+id/textViewLeaveStatus"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/pieChartLeaveStatus"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChartLeaveStatus"
+                android:layout_width="130dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLeaveStatus"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+           
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/shape_circle_yellow"
+                    android:id="@+id/imagViewPendingRequest"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toTopOf="@+id/textViewLeaveStatus"
+                    app:layout_constraintStart_toEndOf="@+id/pieChartLeaveStatus"
+                    app:layout_constraintBottom_toTopOf="@+id/imagViewRejectRequest"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewPendingRequest"/>
+
+                <TextView
+                    android:id="@+id/textViewTotalPendingRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01"
+                    android:textColor="@color/yellow"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@+id/imagViewPendingRequest"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagViewPendingRequest"
+                    app:layout_constraintStart_toStartOf="@+id/imagViewPendingRequest"
+                    app:layout_constraintEnd_toEndOf="@+id/imagViewPendingRequest"/>
+
+
+            
+
+                <TextView
+                    android:id="@+id/textViewPendingRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pendingRequest"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@+id/imagViewPendingRequest"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagViewPendingRequest"
+                    app:layout_constraintStart_toEndOf="@+id/imagViewPendingRequest"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+           
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/shape_cirle_red"
+                    android:id="@+id/imagViewRejectRequest"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imagViewPendingRequest"
+                    app:layout_constraintStart_toEndOf="@+id/pieChartLeaveStatus"
+                    app:layout_constraintBottom_toTopOf="@+id/imagViewAcceptedRequest"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewRejectRequest"/>
+
+                <TextView
+                    android:id="@+id/textViewTotalRejectRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05"
+                    android:textColor="@color/lightRed"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@+id/imagViewRejectRequest"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagViewRejectRequest"
+                    app:layout_constraintStart_toStartOf="@+id/imagViewRejectRequest"
+                    app:layout_constraintEnd_toEndOf="@+id/imagViewRejectRequest"/>
+
+            
+
+                <TextView
+                    android:id="@+id/textViewRejectRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rejectRequest"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@+id/imagViewRejectRequest"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagViewRejectRequest"
+                    app:layout_constraintStart_toEndOf="@+id/imagViewRejectRequest"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+     
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/shape_circle_green"
+                    android:id="@+id/imagViewAcceptedRequest"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imagViewRejectRequest"
+                    app:layout_constraintStart_toEndOf="@+id/pieChartLeaveStatus"
+                    app:layout_constraintBottom_toBottomOf="@+id/pieChartLeaveStatus"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewAcceptedRequest"/>
+                <TextView
+                    android:id="@+id/textViewTotalAcceptedRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08"
+                    android:textColor="@color/green"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@+id/imagViewAcceptedRequest"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagViewAcceptedRequest"
+                    app:layout_constraintStart_toStartOf="@+id/imagViewAcceptedRequest"
+                    app:layout_constraintEnd_toEndOf="@+id/imagViewAcceptedRequest"/>
+
+            
+                <TextView
+                    android:id="@+id/textViewAcceptedRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acceptedRequest"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@+id/imagViewAcceptedRequest"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagViewAcceptedRequest"
+                    app:layout_constraintStart_toEndOf="@+id/imagViewAcceptedRequest"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewListOfHolidays"
+            android:layout_width="364dp"
+            android:layout_height="290dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/cardViewLeaveStatus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/listOfHolidays"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="26dp"
+                android:textStyle="bold"
+                android:textColor="@color/blackColor"
+                android:id="@+id/textViewListOfHolidays"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/recyclerViewHolidayList"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewHolidayList"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewListOfHolidays"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout >
+
+</ScrollView>

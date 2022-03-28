@@ -52,8 +52,11 @@ namespace ClgProject
                 Toast.MakeText(this, "LoggedIn Successfully", ToastLength.Short).Show();
                 passwordlyt.Error = null;
                 usernamelyt.Error = null;
+                Intent Dashboard = new Intent(this, typeof(DashboardInterns));
+                StartActivity(Dashboard);
 
             }
+
             
         }
 

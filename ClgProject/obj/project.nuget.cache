@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "6bo+fkw4Xqjes5nq9uklu2PaVDufNT0bfOyVOhdVty1KyhrXfOdbo65sTpM/8zgHzIjnvGcS9KveqQGvnYuBzA==",
+  "dgSpecHash": "LvHm5M6ERBhw/zSrwCP/KLcjhRb4KaTXEaemYYewMRU7GEbck4kAQdSxrp6BsuK3ftRUJ10hhNCusOh1yjtIlA==",
   "success": true,
   "projectFilePath": "C:\\Users\\devansh.desai\\source\\repos\\ClgProject\\ClgProject\\ClgProject.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\devansh.desai\\.nuget\\packages\\de.hdodenhof.circleimageview\\3.1.0.1\\de.hdodenhof.circleimageview.3.1.0.1.nupkg.sha512",
+    "C:\\Users\\devansh.desai\\.nuget\\packages\\mpandroidchart\\3.1.0\\mpandroidchart.3.1.0.nupkg.sha512",
+    "C:\\Users\\devansh.desai\\.nuget\\packages\\refractored.gifimageview\\2.0.0\\refractored.gifimageview.2.0.0.nupkg.sha512",
     "C:\\Users\\devansh.desai\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.3\\xamarin.androidx.activity.1.1.0.3.nupkg.sha512",
     "C:\\Users\\devansh.desai\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.2\\xamarin.androidx.annotation.1.2.0.2.nupkg.sha512",
