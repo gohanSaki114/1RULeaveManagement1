@@ -8,6 +8,7 @@ using ClgProject.Forget_Password;
 using Google.Android.Material.TextField;
 using System;
 using System.Text.RegularExpressions;
+using ClgProject.Controllers;
 
 namespace ClgProject
 {
@@ -19,14 +20,16 @@ namespace ClgProject
         private TextView forget;
         private Button LoginButton;
         private Regex validUsername = new Regex("^[A-Z]+[a-zA-Z]+(@)+[0-9]*$");
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected async override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.login_page);
             UIReferences();
-            UIClickEvent(); 
+            UIClickEvent();
+            await RestApiClient.Delete($"/api/values/1");
         }
+
      
 
         private void UIClickEvent()
