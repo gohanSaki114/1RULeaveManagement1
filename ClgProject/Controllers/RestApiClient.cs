@@ -20,6 +20,7 @@ namespace ClgProject.Controllers
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(apiBasicUri);
+                //client.DefaultRequestHeaders.Add("Authorization", "Bearer token");
                 var content = new StringContent(JsonConvert.SerializeObject(contentValue), Encoding.UTF8, "application/json");
                 var result = await client.PostAsync(url, content);
                 result.EnsureSuccessStatusCode();
