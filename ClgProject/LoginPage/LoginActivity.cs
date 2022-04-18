@@ -9,6 +9,7 @@ using Google.Android.Material.TextField;
 using System;
 using System.Text.RegularExpressions;
 using ClgProject.Controllers;
+using ClgProject.LoginPage;
 
 namespace ClgProject
 {
@@ -27,10 +28,13 @@ namespace ClgProject
             SetContentView(Resource.Layout.login_page);
             UIReferences();
             UIClickEvent();
-            await RestApiClient.Delete($"/api/values/1");
+
+
+            ModalCheck result = await RestApiClient.Post<string,ModalCheck>("","");
+
         }
 
-     
+
 
         private void UIClickEvent()
         {
@@ -45,7 +49,7 @@ namespace ClgProject
 
                 Toast.MakeText(this, "Please Fill the Required Information", ToastLength.Long).Show();
 
-                
+
             }
 
             else
@@ -60,7 +64,7 @@ namespace ClgProject
 
             }
 
-            
+
         }
 
         private bool checkpassword()
@@ -97,7 +101,7 @@ namespace ClgProject
                 usernamelyt.Error = "Enter Valid Username";
                 return false;
             }
-           
+
             return true;
         }
 
@@ -132,6 +136,6 @@ namespace ClgProject
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-        
+
     }
 }

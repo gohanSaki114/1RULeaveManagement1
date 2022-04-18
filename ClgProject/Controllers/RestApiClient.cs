@@ -13,9 +13,11 @@ namespace ClgProject.Controllers
     public static class RestApiClient
     {
         // In my case this is https://localhost:44366/
-        private static readonly string apiBasicUri = "http://172.16.3.18:3000/";
+        // private static readonly string apiBasicUri = "http://172.16.3.18:3000/";
+        // private static readonly string apiBasicUri = "https://dog.ceo/api/breeds/image/random";
+        private static readonly string apiBasicUri = "https://reqbin.com/echo/post/json";
 
-        public static async Task Post<T>(string url, T contentValue)
+        public static async Task<RsponseModal> Post<T, RsponseModal>(string url, T contentValue) 
         {
             using (var client = new HttpClient())
             {
@@ -23,7 +25,10 @@ namespace ClgProject.Controllers
                 //client.DefaultRequestHeaders.Add("Authorization", "Bearer token");
                 var content = new StringContent(JsonConvert.SerializeObject(contentValue), Encoding.UTF8, "application/json");
                 var result = await client.PostAsync(url, content);
-                result.EnsureSuccessStatusCode();
+                result.EnsureSuccessStatusCode(); 
+                string resultContentString = await result.Content.ReadAsStringAsync();
+                RsponseModal resultContent = JsonConvert.DeserializeObject<RsponseModal>(resultContentString);
+                return resultContent;
             }
         }
 

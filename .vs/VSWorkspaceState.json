@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ClgProject",
+    "\\ClgProject\\LoginPage"
   ],
-  "SelectedNode": "\\ClgProject.sln",
+  "SelectedNode": "\\ClgProject\\LoginPage\\LoginActivity.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -81,6 +81,7 @@
     <Compile Include="InternsFile\ProfileInternFragment.cs" />
     <Compile Include="InternsFile\StatusInternFragment.cs" />
     <Compile Include="LoginPage\LoginActivity.cs" />
+    <Compile Include="LoginPage\ModalCheck.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
