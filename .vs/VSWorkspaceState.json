@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ClgProject",
+    "\\ClgProject\\Controllers"
   ],
-  "SelectedNode": "\\ClgProject.sln",
+  "SelectedNode": "\\ClgProject\\Controllers\\RestApiClient.cs",
   "PreviewInSolutionExplorer": false
 }

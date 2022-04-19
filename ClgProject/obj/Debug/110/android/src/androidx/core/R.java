@@ -9,21 +9,21 @@ package androidx.core;
 public final class R {
 	public static final class attr {
 		public static final int alpha = 0x7f030029;
-		public static final int font = 0x7f030130;
-		public static final int fontProviderAuthority = 0x7f030132;
-		public static final int fontProviderCerts = 0x7f030133;
-		public static final int fontProviderFetchStrategy = 0x7f030134;
-		public static final int fontProviderFetchTimeout = 0x7f030135;
-		public static final int fontProviderPackage = 0x7f030136;
-		public static final int fontProviderQuery = 0x7f030137;
-		public static final int fontProviderSystemFontFamily = 0x7f030138;
-		public static final int fontStyle = 0x7f030139;
-		public static final int fontVariationSettings = 0x7f03013a;
-		public static final int fontWeight = 0x7f03013b;
-		public static final int nestedScrollViewStyle = 0x7f0301fa;
-		public static final int queryPatterns = 0x7f030227;
-		public static final int shortcutMatchRequired = 0x7f030246;
-		public static final int ttcIndex = 0x7f0302e5;
+		public static final int font = 0x7f030134;
+		public static final int fontProviderAuthority = 0x7f030136;
+		public static final int fontProviderCerts = 0x7f030137;
+		public static final int fontProviderFetchStrategy = 0x7f030138;
+		public static final int fontProviderFetchTimeout = 0x7f030139;
+		public static final int fontProviderPackage = 0x7f03013a;
+		public static final int fontProviderQuery = 0x7f03013b;
+		public static final int fontProviderSystemFontFamily = 0x7f03013c;
+		public static final int fontStyle = 0x7f03013d;
+		public static final int fontVariationSettings = 0x7f03013e;
+		public static final int fontWeight = 0x7f03013f;
+		public static final int nestedScrollViewStyle = 0x7f0301fe;
+		public static final int queryPatterns = 0x7f03022b;
+		public static final int shortcutMatchRequired = 0x7f03024a;
+		public static final int ttcIndex = 0x7f0302e9;
 	}
 	public static final class color {
 		public static final int androidx_core_ripple_material_light = 0x7f05001b;
@@ -168,14 +168,14 @@ public final class R {
 		public static final int Widget_Compat_NotificationActionText = 0x7f0f01c6;
 	}
 	public static final class styleable {
-		public static final int[] Capability = new int[] { 0x7f030227, 0x7f030246 };
+		public static final int[] Capability = new int[] { 0x7f03022b, 0x7f03024a };
 		public static final int Capability_queryPatterns = 0;
 		public static final int Capability_shortcutMatchRequired = 1;
 		public static final int[] ColorStateListItem = new int[] { 0x010101a5, 0x0101031f, 0x7f030029 };
 		public static final int ColorStateListItem_alpha = 2;
 		public static final int ColorStateListItem_android_alpha = 1;
 		public static final int ColorStateListItem_android_color = 0;
-		public static final int[] FontFamily = new int[] { 0x7f030132, 0x7f030133, 0x7f030134, 0x7f030135, 0x7f030136, 0x7f030137, 0x7f030138 };
+		public static final int[] FontFamily = new int[] { 0x7f030136, 0x7f030137, 0x7f030138, 0x7f030139, 0x7f03013a, 0x7f03013b, 0x7f03013c };
 		public static final int FontFamily_fontProviderAuthority = 0;
 		public static final int FontFamily_fontProviderCerts = 1;
 		public static final int FontFamily_fontProviderFetchStrategy = 2;
@@ -183,7 +183,7 @@ public final class R {
 		public static final int FontFamily_fontProviderPackage = 4;
 		public static final int FontFamily_fontProviderQuery = 5;
 		public static final int FontFamily_fontProviderSystemFontFamily = 6;
-		public static final int[] FontFamilyFont = new int[] { 0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 0x01010570, 0x7f030130, 0x7f030139, 0x7f03013a, 0x7f03013b, 0x7f0302e5 };
+		public static final int[] FontFamilyFont = new int[] { 0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 0x01010570, 0x7f030134, 0x7f03013d, 0x7f03013e, 0x7f03013f, 0x7f0302e9 };
 		public static final int FontFamilyFont_android_font = 0;
 		public static final int FontFamilyFont_android_fontStyle = 2;
 		public static final int FontFamilyFont_android_fontVariationSettings = 4;

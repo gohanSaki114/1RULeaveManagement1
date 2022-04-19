@@ -10,7 +10,7 @@ using System.Configuration;
 namespace ClgProject.Controllers
 {
 
-    public static class RestApiClient
+    public static class RestApiClient<T,G>
     {
         // In my case this is https://localhost:44366/
         // private static readonly string apiBasicUri = "http://172.16.3.18:3000/";
@@ -18,7 +18,7 @@ namespace ClgProject.Controllers
         // private static readonly string apiBasicUri = "https://dog.ceo/api/breeds/image/random";
        // private static readonly string apiBasicUri = "https://reqbin.com/echo/post/json";
         private static readonly string apiBasicUri = "http://172.16.3.55:3000/";
-        public static async Task<G> Post<T,G>(string url, T contentValue) 
+        public static async Task<G> Post(string url, T contentValue) 
         {
             using (var client = new HttpClient())
             {
@@ -35,7 +35,7 @@ namespace ClgProject.Controllers
             }
         }
 
-        public static async Task Put<T>(string url, T stringValue)
+        public static async Task Put(string url, T stringValue)
         {
             using (var client = new HttpClient())
             {
@@ -46,7 +46,7 @@ namespace ClgProject.Controllers
             }
         }
 
-        public static async Task<T> Get<T>(string url)
+        public static async Task<T> Get(string url)
         {
             using (var client = new HttpClient())
             {
