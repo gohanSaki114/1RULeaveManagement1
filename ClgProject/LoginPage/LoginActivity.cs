@@ -10,6 +10,7 @@ using System;
 using System.Text.RegularExpressions;
 using ClgProject.Controllers;
 using ClgProject.LoginPage;
+using ClgProject.Models;
 
 namespace ClgProject
 {
@@ -20,6 +21,9 @@ namespace ClgProject
         private EditText usernametxt, passwordtxt;
         private TextView forget;
         private Button LoginButton;
+        //
+         private static readonly string Endpoint = "api/Login/AuthenticateUser";
+ 
         private Regex validUsername = new Regex("^[A-Z]+[a-zA-Z]+(@)+[0-9]*$");
         protected async override void OnCreate(Bundle savedInstanceState)
         {
@@ -30,7 +34,7 @@ namespace ClgProject
             UIClickEvent();
 
 
-            ModalCheck result = await RestApiClient.Post<string,ModalCheck>("","");
+        //    ModalCheck result = await RestApiClient.Post<string,ModalCheck>("","");
 
         }
 
@@ -42,7 +46,7 @@ namespace ClgProject
             LoginButton.Click += LoginButton_Click;
         }
 
-        private void LoginButton_Click(object sender, EventArgs e)
+        private async void LoginButton_Click(object sender, EventArgs e)
         {
             if (!checkusername() && !checkpassword())
             {
@@ -59,6 +63,10 @@ namespace ClgProject
                 Toast.MakeText(this, "LoggedIn Successfully", ToastLength.Short).Show();
                 passwordlyt.Error = null;
                 usernamelyt.Error = null;
+                AuthenticateModel mod = new AuthenticateModel();
+                mod.UserName = usernametxt.Text;    
+                mod.Password = passwordtxt.Text;
+                string result = await RestApiClient.Post<AuthenticateModel>(Endpoint,mod);
                 Intent Dashboard = new Intent(this, typeof(DashboardInterns));
                 StartActivity(Dashboard);
 

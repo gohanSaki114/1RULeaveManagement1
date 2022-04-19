@@ -36,7 +36,7 @@ application_config:
 	/* system_property_count */
 	.word	0
 	/* number_of_assemblies_in_apk */
-	.word	138
+	.word	125
 	/* bundled_assembly_name_width */
 	.word	70
 	/* android_package_name */
@@ -79,7 +79,7 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",@progbits,1
 	.type	.L.env.str.8, @object
 .L.env.str.8:
-	.asciz	"e1146a43-9100-447c-9d54-34b5c79640ed"
+	.asciz	"b2a11503-14e7-4561-a12b-47f8414300ef"
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",@progbits,1
 	.type	.L.env.str.9, @object
@@ -386,32 +386,6 @@ app_system_properties:
 .L.env.buf.124:
 	.zero	70
 .L.env.buf.125:
-	.zero	70
-.L.env.buf.126:
-	.zero	70
-.L.env.buf.127:
-	.zero	70
-.L.env.buf.128:
-	.zero	70
-.L.env.buf.129:
-	.zero	70
-.L.env.buf.130:
-	.zero	70
-.L.env.buf.131:
-	.zero	70
-.L.env.buf.132:
-	.zero	70
-.L.env.buf.133:
-	.zero	70
-.L.env.buf.134:
-	.zero	70
-.L.env.buf.135:
-	.zero	70
-.L.env.buf.136:
-	.zero	70
-.L.env.buf.137:
-	.zero	70
-.L.env.buf.138:
 	.zero	70
 	/* Bundled assemblies data */
 	.section	.data.bundled_assemblies,"aw",@progbits
@@ -2294,199 +2268,4 @@ bundled_assemblies:
 	.zero	4
 	.xword	.L.env.buf.125
 
-	/* apk_fd */
-	.word	-1
-	/* data_offset */
-	.word	0
-	/* data_size */
-	.word	0
-	/* data */
-	.zero	4
-	.xword	0
-	/* name_length */
-	.word	0
-	/* name */
-	.zero	4
-	.xword	.L.env.buf.126
-
-	/* apk_fd */
-	.word	-1
-	/* data_offset */
-	.word	0
-	/* data_size */
-	.word	0
-	/* data */
-	.zero	4
-	.xword	0
-	/* name_length */
-	.word	0
-	/* name */
-	.zero	4
-	.xword	.L.env.buf.127
-
-	/* apk_fd */
-	.word	-1
-	/* data_offset */
-	.word	0
-	/* data_size */
-	.word	0
-	/* data */
-	.zero	4
-	.xword	0
-	/* name_length */
-	.word	0
-	/* name */
-	.zero	4
-	.xword	.L.env.buf.128
-
-	/* apk_fd */
-	.word	-1
-	/* data_offset */
-	.word	0
-	/* data_size */
-	.word	0
-	/* data */
-	.zero	4
-	.xword	0
-	/* name_length */
-	.word	0
-	/* name */
-	.zero	4
-	.xword	.L.env.buf.129
-
-	/* apk_fd */
-	.word	-1
-	/* data_offset */
-	.word	0
-	/* data_size */
-	.word	0
-	/* data */
-	.zero	4
-	.xword	0
-	/* name_length */
-	.word	0
-	/* name */
-	.zero	4
-	.xword	.L.env.buf.130
-
-	/* apk_fd */
-	.word	-1
-	/* data_offset */
-	.word	0
-	/* data_size */
-	.word	0
-	/* data */
-	.zero	4
-	.xword	0
-	/* name_length */
-	.word	0
-	/* name */
-	.zero	4
-	.xword	.L.env.buf.131
-
-	/* apk_fd */
-	.word	-1
-	/* data_offset */
-	.word	0
-	/* data_size */
-	.word	0
-	/* data */
-	.zero	4
-	.xword	0
-	/* name_length */
-	.word	0
-	/* name */
-	.zero	4
-	.xword	.L.env.buf.132
-
-	/* apk_fd */
-	.word	-1
-	/* data_offset */
-	.word	0
-	/* data_size */
-	.word	0
-	/* data */
-	.zero	4
-	.xword	0
-	/* name_length */
-	.word	0
-	/* name */
-	.zero	4
-	.xword	.L.env.buf.133
-
-	/* apk_fd */
-	.word	-1
-	/* data_offset */
-	.word	0
-	/* data_size */
-	.word	0
-	/* data */
-	.zero	4
-	.xword	0
-	/* name_length */
-	.word	0
-	/* name */
-	.zero	4
-	.xword	.L.env.buf.134
-
-	/* apk_fd */
-	.word	-1
-	/* data_offset */
-	.word	0
-	/* data_size */
-	.word	0
-	/* data */
-	.zero	4
-	.xword	0
-	/* name_length */
-	.word	0
-	/* name */
-	.zero	4
-	.xword	.L.env.buf.135
-
-	/* apk_fd */
-	.word	-1
-	/* data_offset */
-	.word	0
-	/* data_size */
-	.word	0
-	/* data */
-	.zero	4
-	.xword	0
-	/* name_length */
-	.word	0
-	/* name */
-	.zero	4
-	.xword	.L.env.buf.136
-
-	/* apk_fd */
-	.word	-1
-	/* data_offset */
-	.word	0
-	/* data_size */
-	.word	0
-	/* data */
-	.zero	4
-	.xword	0
-	/* name_length */
-	.word	0
-	/* name */
-	.zero	4
-	.xword	.L.env.buf.137
-
-	/* apk_fd */
-	.word	-1
-	/* data_offset */
-	.word	0
-	/* data_size */
-	.word	0
-	/* data */
-	.zero	4
-	.xword	0
-	/* name_length */
-	.word	0
-	/* name */
-	.zero	4
-	.xword	.L.env.buf.138
-
-	.size	bundled_assemblies, 5520
+	.size	bundled_assemblies, 5000

@@ -79,6 +79,7 @@
                 >
 
                 <EditText
+                    android:text="Maurits@123"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/username"
@@ -102,6 +103,7 @@
                 app:passwordToggleEnabled="true">
             
                 <EditText
+                    android:text="password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/password"

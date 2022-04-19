@@ -408,13 +408,13 @@
           "lib/MonoAndroid/MPAndroidChart.dll": {}
         }
       },
-      "Newtonsoft.Json/9.0.1": {
+      "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "Refractored.GifImageView/2.0.0": {
@@ -2075,14 +2075,14 @@
         "mpandroidchart.nuspec"
       ]
     },
-    "Newtonsoft.Json/9.0.1": {
-      "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "type": "package",
-      "path": "newtonsoft.json/9.0.1",
-      "hasTools": true,
+      "path": "newtonsoft.json/13.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -2093,13 +2093,13 @@
         "lib/net45/Newtonsoft.Json.xml",
         "lib/netstandard1.0/Newtonsoft.Json.dll",
         "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.9.0.1.nupkg.sha512",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
-        "tools/install.ps1"
+        "packageIcon.png"
       ]
     },
     "Refractored.GifImageView/2.0.0": {
@@ -4257,6 +4257,7 @@
     "MonoAndroid,Version=v11.0": [
       "MPAndroidChart >= 3.1.0",
       "Microsoft.AspNetCore.Mvc.Core >= 2.2.5",
+      "Newtonsoft.Json >= 13.0.1",
       "Refractored.GifImageView >= 2.0.0",
       "System.Configuration.ConfigurationManager >= 6.0.0",
       "System.Net.Http >= 4.3.4",
@@ -4268,20 +4269,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sagar\\.nuget\\packages\\": {}
+    "C:\\Users\\sagar.khati\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sagar\\Source\\Repos\\1RULeaveManagement\\ClgProject\\ClgProject.csproj",
+      "projectUniqueName": "C:\\Users\\sagar.khati\\Source\\Repos\\1RULeaveManagement1\\ClgProject\\ClgProject.csproj",
       "projectName": "ClgProject",
-      "projectPath": "C:\\Users\\sagar\\Source\\Repos\\1RULeaveManagement\\ClgProject\\ClgProject.csproj",
-      "packagesPath": "C:\\Users\\sagar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sagar\\Source\\Repos\\1RULeaveManagement\\ClgProject\\obj\\",
+      "projectPath": "C:\\Users\\sagar.khati\\Source\\Repos\\1RULeaveManagement1\\ClgProject\\ClgProject.csproj",
+      "packagesPath": "C:\\Users\\sagar.khati\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sagar.khati\\Source\\Repos\\1RULeaveManagement1\\ClgProject\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\sagar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sagar.khati\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4307,6 +4308,10 @@
           "Microsoft.AspNetCore.Mvc.Core": {
             "target": "Package",
             "version": "[2.2.5, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
           },
           "Refractored.GifImageView": {
             "target": "Package",

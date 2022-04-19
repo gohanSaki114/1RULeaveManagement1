@@ -13,6 +13,7 @@ namespace ClgProject.LoginPage
 {
     public  class ModalCheck
     {
+       
         public string success { get; set; }
     }
 }

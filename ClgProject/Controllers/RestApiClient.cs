@@ -14,21 +14,23 @@ namespace ClgProject.Controllers
     {
         // In my case this is https://localhost:44366/
         // private static readonly string apiBasicUri = "http://172.16.3.18:3000/";
+        //http://172.16.3.55:3000/
         // private static readonly string apiBasicUri = "https://dog.ceo/api/breeds/image/random";
-        private static readonly string apiBasicUri = "https://reqbin.com/echo/post/json";
-
-        public static async Task<RsponseModal> Post<T, RsponseModal>(string url, T contentValue) 
+       // private static readonly string apiBasicUri = "https://reqbin.com/echo/post/json";
+        private static readonly string apiBasicUri = "http://172.16.3.55:3000/";
+        public static async Task<G> Post<T>(string url, T contentValue) 
         {
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(apiBasicUri);
                 //client.DefaultRequestHeaders.Add("Authorization", "Bearer token");
                 var content = new StringContent(JsonConvert.SerializeObject(contentValue), Encoding.UTF8, "application/json");
-                var result = await client.PostAsync(url, content);
+                string urrll =   apiBasicUri + url;
+                var result = await client.PostAsync(urrll, content);
                 result.EnsureSuccessStatusCode(); 
                 string resultContentString = await result.Content.ReadAsStringAsync();
-                RsponseModal resultContent = JsonConvert.DeserializeObject<RsponseModal>(resultContentString);
-                return resultContent;
+                //RsponseModal resultContent = JsonConvert.DeserializeObject<RsponseModal>(resultContentString);
+                return resultContentString;
             }
         }
 
