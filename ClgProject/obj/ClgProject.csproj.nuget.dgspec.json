@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sagar.khati\\Source\\Repos\\1RULeaveManagement1\\ClgProject\\ClgProject.csproj": {}
+    "C:\\Users\\sagar\\Source\\Repos\\1RULeaveManagement1\\ClgProject\\ClgProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sagar.khati\\Source\\Repos\\1RULeaveManagement1\\ClgProject\\ClgProject.csproj": {
+    "C:\\Users\\sagar\\Source\\Repos\\1RULeaveManagement1\\ClgProject\\ClgProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sagar.khati\\Source\\Repos\\1RULeaveManagement1\\ClgProject\\ClgProject.csproj",
+        "projectUniqueName": "C:\\Users\\sagar\\Source\\Repos\\1RULeaveManagement1\\ClgProject\\ClgProject.csproj",
         "projectName": "ClgProject",
-        "projectPath": "C:\\Users\\sagar.khati\\Source\\Repos\\1RULeaveManagement1\\ClgProject\\ClgProject.csproj",
-        "packagesPath": "C:\\Users\\sagar.khati\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sagar.khati\\Source\\Repos\\1RULeaveManagement1\\ClgProject\\obj\\",
+        "projectPath": "C:\\Users\\sagar\\Source\\Repos\\1RULeaveManagement1\\ClgProject\\ClgProject.csproj",
+        "packagesPath": "C:\\Users\\sagar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sagar\\Source\\Repos\\1RULeaveManagement1\\ClgProject\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\sagar.khati\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sagar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

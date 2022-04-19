@@ -66,7 +66,7 @@ namespace ClgProject
                 AuthenticateModel mod = new AuthenticateModel();
                 mod.UserName = usernametxt.Text;    
                 mod.Password = passwordtxt.Text;
-                string result = await RestApiClient.Post<AuthenticateModel>(Endpoint,mod);
+                string result = await RestApiClient.Post<AuthenticateModel,string>(Endpoint,mod);
                 Intent Dashboard = new Intent(this, typeof(DashboardInterns));
                 StartActivity(Dashboard);
 
